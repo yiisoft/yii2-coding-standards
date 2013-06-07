@@ -7,8 +7,8 @@ are based on PSR-2 standard with some minor exceptions and changes. Rules derive
 in Yii2 standard were implemented (or planned to be) as sniff classes.
 
 Rules located in this repository could also be used for checking code style of an existing Yii2 applications.
-Everything that is merged into main [Yii2 development repository](https://github.com/yiisoft/yii2) is being checked
-with these rule set.
+Everything that is merged into main [Yii2 development repository](https://github.com/yiisoft/yii2) being checked
+with these rule set as well.
 
 USAGE
 -----
@@ -51,6 +51,10 @@ PHP_CodeSniffer:
 * [Configration options](http://pear.php.net/manual/en/package.php.php-codesniffer.config-options.php)
 * [Manual and guide](http://pear.php.net/manual/en/package.php.php-codesniffer.php)
 * [GitHub repository](https://github.com/squizlabs/PHP_CodeSniffer)
+
+Yii2:
+
+* [Coding style](https://github.com/yiisoft/yii2/wiki/Core-framework-code-style) wiki page
 
 ADDITIONAL NOTES
 ----------------
