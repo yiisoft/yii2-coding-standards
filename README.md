@@ -13,6 +13,10 @@ with these rule set as well.
 USAGE
 -----
 
+### Getting code
+
+You can get code style definition using one of the following methods.
+
 * Clone `yiisoft/yii2-coding-standard` repository:
 
 ```
@@ -37,11 +41,15 @@ $ php -r "eval('?>'.file_get_contents('https://getcomposer.org/installer'));"
 $ php composer.phar install
 ```
 
-* Voila! Now you can check your code:
+### Using code style
+
+After CodeSniffer is installed you can launch it with custom code style using the following syntax:
 
 ```
 $ ./vendor/bin/phpcs --extensions=php --standard=Yii2 /home/resurtm/work/Yii2MegaApp/
 ```
+
+If you're using PhpStorm you can configure it to use CodeSniffer using Settings → PHP → Code Sniffer. Yii2 code style can be specified at Inspections → PHP → PHP Code Sniffer validation.
 
 USEFUL LINKS
 ------------
