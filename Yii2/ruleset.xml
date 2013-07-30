@@ -25,9 +25,6 @@
 	<!-- Code MUST use tabs for indenting, not spaces. -->
 	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent" />
 
-	<!-- Property names MUST start with an initial underscore if they are private. -->
-	<!-- TODO: -->
-
 	<!-- Property declaration rules. -->
 	<!-- TODO: -->
 
