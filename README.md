@@ -56,7 +56,7 @@ USEFUL LINKS
 
 PHP_CodeSniffer:
 
-* [Configration options](http://pear.php.net/manual/en/package.php.php-codesniffer.config-options.php)
+* [Configuration options](http://pear.php.net/manual/en/package.php.php-codesniffer.config-options.php)
 * [Manual and guide](http://pear.php.net/manual/en/package.php.php-codesniffer.php)
 * [GitHub repository](https://github.com/squizlabs/PHP_CodeSniffer)
 
