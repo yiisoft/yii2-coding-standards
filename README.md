@@ -9,7 +9,7 @@ Getting code
 
 You can get code style definition using one of the following methods.
 
-* Clone `yiisoft/yii2-coding-standard` repository:
+* Clone `yiisoft/yii2-coding-standards` repository:
 
 ```
 $ git clone git://github.com/yiisoft/yii2-coding-standards.git
