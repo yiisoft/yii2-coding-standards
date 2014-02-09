@@ -1,6 +1,6 @@
 <?php
 
-class Yii2_Sniffs_PrivatePropertiesUnderscoreSniff implements PHP_CodeSniffer_Sniff
+class Yii2_Sniffs_Properties_PrivatePropertiesUnderscoreSniff implements PHP_CodeSniffer_Sniff
 {
 	public function register()
 	{
