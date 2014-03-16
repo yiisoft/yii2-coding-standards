@@ -22,9 +22,6 @@
 		<exclude name="PSR2.ControlStructures.SwitchDeclaration"/>
 	</rule>
 
-	<!-- Code MUST use tabs for indenting, not spaces. -->
-	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent" />
-
 	<!-- Property declaration rules. -->
 	<!-- TODO: -->
 
