@@ -3,10 +3,6 @@
 	<description>Yii 2 Web Application Framework Coding Standard</description>
 
 	<rule ref="PSR2">
-		<!-- Code MUST use tabs for indenting, not spaces. -->
-		<exclude name="Generic.WhiteSpace.ScopeIndent"/>
-		<exclude name="Generic.WhiteSpace.DisallowTabIndent"/>
-
 		<!-- Property names MUST start with an initial underscore if they are private. -->
 		<exclude name="PSR2.Classes.PropertyDeclaration"/>
 
