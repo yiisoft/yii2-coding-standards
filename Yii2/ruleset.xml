@@ -28,6 +28,7 @@
 	<!-- TODO: -->
 
 	<!-- ... other Yii2 specific rules. -->
+	<rule ref="Yii2.PHP.DisallowLongArraySyntax"/>
 
 	<exclude-pattern>*/i18n/data/*</exclude-pattern>
 	<exclude-pattern>*/views/errorHandler/*</exclude-pattern>
