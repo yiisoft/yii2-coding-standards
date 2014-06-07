@@ -32,8 +32,7 @@
 
 	<exclude-pattern>*/i18n/data/*</exclude-pattern>
 	<exclude-pattern>*/views/errorHandler/*</exclude-pattern>
-	<exclude-pattern>*/requirements/views/*</exclude-pattern>
+	<exclude-pattern>*/requirements/*</exclude-pattern>
 
-	<exclude-pattern>YiiRequirementChecker.php</exclude-pattern>
 	<exclude-pattern>ProfileTarget.php</exclude-pattern>
 </ruleset>
