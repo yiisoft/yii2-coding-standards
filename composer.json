@@ -49,6 +49,6 @@
 	},
 	"require": {
 		"php": ">=5.4.0",
-		"squizlabs/php_codesniffer": "1.*"
+		"squizlabs/php_codesniffer": "*"
 	}
 }
