@@ -30,6 +30,12 @@
 	<!-- ... other Yii2 specific rules. -->
 	<rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
 
+	<!-- If string doesn't contain variables or single quotes, use single quotes. -->
+	<rule ref="Squiz.Strings.DoubleQuoteUsage.ContainsVar">
+		<!-- Not check variable substitution -->            
+  		<severity>0</severity>
+ 	</rule>
+
 	<exclude-pattern>*/i18n/data/*</exclude-pattern>
 	<exclude-pattern>*/views/errorHandler/*</exclude-pattern>
 	<exclude-pattern>*/requirements/*</exclude-pattern>
