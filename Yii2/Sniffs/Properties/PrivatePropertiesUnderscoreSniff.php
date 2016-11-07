@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * Class for a sniff to oblige private property name prefixed with underscore
+ *
+ * This Sniff check if a underscore is missing before private property name.
+ * The private property name is identified by the PHP token T_VARIABLE
+ * The private visibility is identified by the PHP token T_PRIVATE
+ */
 class Yii2_Sniffs_Properties_PrivatePropertiesUnderscoreSniff implements PHP_CodeSniffer_Sniff
 {
     public function register()
