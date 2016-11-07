@@ -14,7 +14,9 @@ class Yii2_Sniffs_Properties_PrivatePropertiesUnderscoreSniff implements PHP_Cod
             $tokens[$pointer + 1]['type'] === 'T_WHITESPACE' &&
             $tokens[$pointer + 2]['type'] === 'T_VARIABLE' &&
             strpos($tokens[$pointer + 2]['content'], '$_') !== 0) {
-            $file->addError('Private property name must be prefixed with underscore.', $pointer);
+
+            $data  = [$tokens[$pointer + 2]['content']];
+            $file->addError('Private property name "%s" must be prefixed with underscore.', $pointer, 'NoUnderscore', $data);
         }
     }
 }
