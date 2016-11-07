@@ -46,6 +46,17 @@
         <exclude-pattern>m\d{6}_\d{6}_.+\.php$</exclude-pattern>
     </rule>
 
+    <!-- Ignore for tests. -->
+    <!-- Ignore method name prefixed with underscore to indicate visibility -->
+    <rule ref="PSR2.Methods.MethodDeclaration.Underscore">
+        <exclude-pattern>tests?/*(Cest|Test).php$</exclude-pattern>
+    </rule>
+    <!-- Ignore declare new symbols and execute logic with side effects same file -->
+    <rule ref="PSR1.Files.SideEffects.FoundWithSymbols">
+        <exclude-pattern>/tests?*/_bootstrap.php$</exclude-pattern>
+        <exclude-pattern>/web/(index|index-test).php$</exclude-pattern>
+    </rule>
+
     <exclude-pattern>*/i18n/data/*</exclude-pattern>
     <exclude-pattern>*/views/errorHandler/*</exclude-pattern>
     <exclude-pattern>*/requirements/*</exclude-pattern>
