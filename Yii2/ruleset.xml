@@ -36,6 +36,16 @@
         <severity>0</severity>
     </rule>
 
+    <!-- Ignore for migrations. -->
+    <!-- Ignore missing namespace for migrations -->
+    <rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
+        <exclude-pattern>m\d{6}_\d{6}_.+\.php$</exclude-pattern>
+    </rule>
+    <!-- Ignore camel caps format for class name of migrations -->
+    <rule ref="Squiz.Classes.ValidClassName.NotCamelCaps">
+        <exclude-pattern>m\d{6}_\d{6}_.+\.php$</exclude-pattern>
+    </rule>
+
     <exclude-pattern>*/i18n/data/*</exclude-pattern>
     <exclude-pattern>*/views/errorHandler/*</exclude-pattern>
     <exclude-pattern>*/requirements/*</exclude-pattern>
