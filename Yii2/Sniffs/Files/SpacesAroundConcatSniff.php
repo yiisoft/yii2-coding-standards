@@ -1,10 +1,5 @@
 <?php
 
-namespace Yii2\Sniffs\Files;
-
-use PHP_CodeSniffer\Sniffs\Sniff;
-use PHP_CodeSniffer\Files\File;
-
 /**
  * Class for a sniff to oblige whitespaces before and after a concatenation operator
  *
@@ -15,6 +10,11 @@ use PHP_CodeSniffer\Files\File;
  *
  * @since 2.0.2
  */
+
+namespace Yii2\Sniffs\Files;
+
+use PHP_CodeSniffer\Files\File;
+use PHP_CodeSniffer\Sniffs\Sniff;
 
 class SpacesAroundConcatSniff implements Sniff
 {
@@ -27,14 +27,14 @@ class SpacesAroundConcatSniff implements Sniff
     {
         $tokens = $phpcsFile->getTokens();
 
-        if ($tokens[$stackPtr-1]['type'] !== 'T_WHITESPACE') {
+        if ($tokens[$stackPtr - 1]['type'] !== 'T_WHITESPACE') {
             $error = 'Whitespace is expected before any concat operator "."';
             $fix = $phpcsFile->addFixableError($error, $stackPtr, 'NoSpace');
             if ($fix === true) {
                 $phpcsFile->fixer->addContentBefore($stackPtr, ' ');
             }
         }
-        if ($tokens[$stackPtr+1]['type'] !== 'T_WHITESPACE') {
+        if ($tokens[$stackPtr + 1]['type'] !== 'T_WHITESPACE') {
             $error = 'Whitespace is expected after any concat operator "."';
             $fix = $phpcsFile->addFixableError($error, $stackPtr, 'NoSpace');
             if ($fix === true) {

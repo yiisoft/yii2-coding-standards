@@ -1,10 +1,5 @@
 <?php
 
-namespace Yii2\Sniffs\Files;
-
-use PHP_CodeSniffer\Files\File;
-use PHP_CodeSniffer\Sniffs\Sniff;
-
 /**
  * Class for a sniff to oblige private property name prefixed with underscore
  *
@@ -12,6 +7,12 @@ use PHP_CodeSniffer\Sniffs\Sniff;
  * The private property name is identified by the PHP token T_VARIABLE
  * The private visibility is identified by the PHP token T_PRIVATE
  */
+
+namespace Yii2\Sniffs\Files;
+
+use PHP_CodeSniffer\Files\File;
+use PHP_CodeSniffer\Sniffs\Sniff;
+
 class PrivatePropertiesUnderscoreSniff implements Sniff
 {
     public function register()
