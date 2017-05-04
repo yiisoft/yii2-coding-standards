@@ -11,7 +11,7 @@
  * @since 2.0.2
  */
 
-namespace Yii2\Sniffs\Files;
+namespace PHP_CodeSniffer\Standards\Yii2\Sniffs\Files;
 
 use PHP_CodeSniffer\Files\File;
 use PHP_CodeSniffer\Sniffs\Sniff;

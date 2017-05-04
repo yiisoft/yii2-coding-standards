@@ -8,7 +8,7 @@
  * The private visibility is identified by the PHP token T_PRIVATE
  */
 
-namespace Yii2\Sniffs\Files;
+namespace PHP_CodeSniffer\Standards\Yii2\Sniffs\Files;
 
 use PHP_CodeSniffer\Files\File;
 use PHP_CodeSniffer\Sniffs\Sniff;
