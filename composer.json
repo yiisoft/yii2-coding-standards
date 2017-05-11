@@ -4,6 +4,7 @@
 	"keywords": ["yii", "framework", "codesniffer"],
 	"homepage": "http://www.yiiframework.com/",
 	"license": "BSD-3-Clause",
+	"type": "phpcodesniffer-standard",
 	"authors": [
 		{
 			"name": "Qiang Xue",
