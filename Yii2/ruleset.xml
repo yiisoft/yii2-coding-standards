@@ -31,9 +31,24 @@
     <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
 
     <!-- If string doesn't contain variables or single quotes, use single quotes. -->
-    <rule ref="Squiz.Strings.DoubleQuoteUsage.ContainsVar">
-        <!-- Not check variable substitution -->
-        <severity>0</severity>
+    <rule ref="Squiz.Strings.DoubleQuoteUsage.NotRequired"/>
+
+    <!-- Replaces Yii2_Sniffs_Files_SpacesAroundConcatSniff -->
+    <rule ref="Squiz.Strings.ConcatenationSpacing">
+        <properties>
+            <property name="spacing" value="1" />
+            <property name="ignoreNewlines" value="true" />
+        </properties>
+    </rule>
+
+    <!-- Replaces Yii2_Sniffs_Properties_PrivatePropertiesUnderscoreSniff -->
+    <rule ref="Squiz.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+
+    <!-- https://github.com/squizlabs/PHP_CodeSniffer/issues/1008 -->
+    <rule ref="Squiz.ControlStructures.ControlSignature">
+        <properties>
+            <property name="requiredSpacesBeforeColon" value="0" />
+        </properties>
     </rule>
 
     <!-- Ignore for migrations. -->
