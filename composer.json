@@ -2,37 +2,37 @@
 	"name": "yiisoft/yii2-coding-standards",
 	"description": "Yii PHP Framework Version 2 - Coding standard tools",
 	"keywords": ["yii", "framework", "codesniffer"],
-	"homepage": "http://www.yiiframework.com/",
+	"homepage": "https://www.yiiframework.com/",
 	"license": "BSD-3-Clause",
 	"type": "phpcodesniffer-standard",
 	"authors": [
 		{
 			"name": "Qiang Xue",
 			"email": "qiang.xue@gmail.com",
-			"homepage": "http://www.yiiframework.com/",
+			"homepage": "https://www.yiiframework.com/",
 			"role": "Founder and project lead"
 		},
 		{
 			"name": "Alexander Makarov",
 			"email": "sam@rmcreative.ru",
-			"homepage": "http://rmcreative.ru/",
+			"homepage": "https://rmcreative.ru/",
 			"role": "Core framework development"
 		},
 		{
 			"name": "Maurizio Domba",
-			"homepage": "http://mdomba.info/",
+			"homepage": "https://mdomba.info/",
 			"role": "Core framework development"
 		},
 		{
 			"name": "Carsten Brandt",
 			"email": "mail@cebe.cc",
-			"homepage": "http://cebe.cc/",
+			"homepage": "https://cebe.cc/",
 			"role": "Core framework development"
 		},
 		{
 			"name": "Timur Ruziev",
 			"email": "resurtm@gmail.com",
-			"homepage": "http://resurtm.com/",
+			"homepage": "https://resurtm.com/",
 			"role": "Core framework development"
 		},
 		{
@@ -43,8 +43,8 @@
 	],
 	"support": {
 		"issues": "https://github.com/yiisoft/yii2/issues?state=open",
-		"forum": "http://www.yiiframework.com/forum/",
-		"wiki": "http://www.yiiframework.com/wiki/",
+		"forum": "https://www.yiiframework.com/forum/",
+		"wiki": "https://www.yiiframework.com/wiki/",
 		"irc": "ircs://irc.libera.chat:6697/yii",
 		"source": "https://github.com/yiisoft/yii2"
 	},
