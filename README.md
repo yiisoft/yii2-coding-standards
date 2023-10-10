@@ -59,7 +59,7 @@ Yii2 code style can be specified at Inspections → PHP → PHP Code Sniffer val
 
 ### Useful links
 
-* [Configuration options](http://pear.php.net/manual/en/package.php.php-codesniffer.config-options.php)
+* [Configuration options](https://pear.php.net/manual/en/package.php.php-codesniffer.config-options.php)
 * [Manual and guide](https://github.com/squizlabs/PHP_CodeSniffer/wiki)
 * [GitHub repository](https://github.com/squizlabs/PHP_CodeSniffer)
 
