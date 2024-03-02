@@ -18,6 +18,9 @@
         <exclude name="PSR2.ControlStructures.SwitchDeclaration"/>
     </rule>
 
+    <!-- display progress -->
+    <arg value="p"/>
+
     <!-- Property declaration rules. -->
     <!-- TODO: -->
 
