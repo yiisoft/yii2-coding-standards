@@ -20,6 +20,9 @@
 
     <!-- display progress -->
     <arg value="p"/>
+    <!-- Show error codes -->
+    <arg value="s"/>
+    <arg name="colors"/>
 
     <!-- Property declaration rules. -->
     <!-- TODO: -->
