@@ -16,6 +16,9 @@
 
         <!-- CASE keyword must be indented 4 spaces from SWITCH keyword. -->
         <exclude name="PSR2.ControlStructures.SwitchDeclaration"/>
+
+        <!-- Exclude false positive for PSR12.Files.FileHeader.SpacingAfterBlock -->
+        <exclude name="PSR12.Files.FileHeader.SpacingAfterBlock"/>
     </rule>
 
     <!-- display progress -->
