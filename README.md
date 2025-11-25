@@ -11,26 +11,26 @@ You can get code style definition using one of the following methods.
 
 * Clone `yiisoft/yii2-coding-standards` repository:
 
-```
-$ git clone git://github.com/yiisoft/yii2-coding-standards.git
+```bash
+git clone git@github.com:yiisoft/yii2-coding-standards.git
 ```
 
 * Install `composer.phar` distribution:
 
-```
-$ curl -sS https://getcomposer.org/installer | php
+```bash
+curl -sS https://getcomposer.org/installer | php
 ```
 
 Or if your system doesn't have CURL installed:
 
-```
-$ php -r "eval('?>'.file_get_contents('https://getcomposer.org/installer'));"
+```bash
+php -r "eval('?>'.file_get_contents('https://getcomposer.org/installer'));"
 ```
 
 * Set up all dependencies declared in `composer.json`:
 
-```
-$ php composer.phar install
+```bash
+php composer.phar install
 ```
 
 PHP_Codesniffer
