@@ -36,7 +36,7 @@ php composer.phar install
 PHP_Codesniffer
 ---------------
 
-[PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) coding standard, rule set
+[PHP_CodeSniffer](https://github.com/PHPCSStandards/PHP_CodeSniffer) coding standard, rule set
 and sniff token parsing classes for the [Yii 2 Web Framework](https://github.com/yiisoft/yii2/). Overally rules
 are based on PSR-12 standard with some minor exceptions and changes. Rules derived from PSR-12 standard and excluded
 in Yii2 standard were implemented (or planned to be) as sniff classes.
@@ -84,8 +84,8 @@ Yii2 code style can be specified at Inspections → PHP → PHP Code Sniffer val
 ### Useful links
 
 * [Configuration options](https://pear.php.net/manual/en/package.php.php-codesniffer.config-options.php)
-* [Manual and guide](https://github.com/squizlabs/PHP_CodeSniffer/wiki)
-* [GitHub repository](https://github.com/squizlabs/PHP_CodeSniffer)
+* [Manual and guide](https://github.com/PHPCSStandards/PHP_CodeSniffer/wiki)
+* [GitHub repository](https://github.com/PHPCSStandards/PHP_CodeSniffer)
 
 PhpStorm
 --------
