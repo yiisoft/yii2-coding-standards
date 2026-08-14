@@ -84,7 +84,7 @@ select the `Yii2` coding standard.
 
 ## Documentation
 
-- [Yii2 core code style](https://github.com/yiisoft/yii2/blob/22.0/docs/internals/core-code-style.md)
+- [Yii2 core code style](https://github.com/yiisoft/yii2/blob/master/docs/internals/core-code-style.md)
 - [PHP_CodeSniffer documentation](https://github.com/PHPCSStandards/PHP_CodeSniffer/wiki)
 - [PHP_CodeSniffer configuration options](https://github.com/PHPCSStandards/PHP_CodeSniffer/wiki/Configuration-Options)
 
