@@ -1,100 +1,100 @@
-Yii 2 Web Framework Coding Standard
-===================================
+<p align="center">
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://www.yiiframework.com/image/yii_logo_dark.svg">
+        <source media="(prefers-color-scheme: light)" srcset="https://www.yiiframework.com/image/yii_logo_light.svg">
+        <img src="https://www.yiiframework.com/image/yii_logo_light.svg" alt="Yii Framework" height="100px">
+    </picture>
+    <h1 align="center">Coding Standard for Yii 2</h1>
+    <br>
+</p>
 
-This repository contains settings for [Yii2 coding style](https://github.com/yiisoft/yii2/wiki/Core-framework-code-style)
-for various tools.
+This package provides the [PHP_CodeSniffer](https://github.com/PHPCSStandards/PHP_CodeSniffer) coding standard used by
+[Yii2](https://www.yiiframework.com/) core and official extensions. The ruleset is based on PSR-12 with the
+Yii-specific exceptions documented in the [Yii2 core code style](https://github.com/yiisoft/yii2/blob/master/docs/internals/core-code-style.md).
 
-Getting code
+[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-coding-standards.svg?style=for-the-badge&label=Stable&logo=packagist)](https://packagist.org/packages/yiisoft/yii2-coding-standards)
+[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-coding-standards.svg?style=for-the-badge&label=Downloads)](https://packagist.org/packages/yiisoft/yii2-coding-standards)
+
+Installation
 ------------
 
-You can get code style definition using one of the following methods.
+> [!IMPORTANT]
+> - The minimum required [PHP](https://www.php.net/) version is PHP `7.4`.
+> - The minimum supported PHP_CodeSniffer version is `4.0.2`.
 
-* Clone `yiisoft/yii2-coding-standards` repository:
+The preferred way to install this package is through [Composer](https://getcomposer.org/download/):
 
-```bash
-git clone git@github.com:yiisoft/yii2-coding-standards.git
+```shell
+composer require --dev --prefer-dist yiisoft/yii2-coding-standards
 ```
 
-* Install `composer.phar` distribution:
+To register the `Yii2` ruleset automatically, allow and install the
+[PHP_CodeSniffer Standards Composer Installer Plugin](https://github.com/PHPCSStandards/composer-installer):
 
-```bash
-curl -sS https://getcomposer.org/installer | php
-```
-
-Or if your system doesn't have CURL installed:
-
-```bash
-php -r "eval('?>'.file_get_contents('https://getcomposer.org/installer'));"
-```
-
-* Set up all dependencies declared in `composer.json`:
-
-```bash
-php composer.phar install
-```
-
-PHP_Codesniffer
----------------
-
-[PHP_CodeSniffer](https://github.com/PHPCSStandards/PHP_CodeSniffer) coding standard, rule set
-and sniff token parsing classes for the [Yii 2 Web Framework](https://github.com/yiisoft/yii2/). Overally rules
-are based on PSR-12 standard with some minor exceptions and changes. Rules derived from PSR-12 standard and excluded
-in Yii2 standard were implemented (or planned to be) as sniff classes.
-
-Rules could also be used for checking code style of an existing Yii2 applications.
-
-Everything that is merged into main [Yii2 development repository](https://github.com/yiisoft/yii2) being checked
-with these rule set as well.
-
-### Using code style
-
-After CodeSniffer is installed you can launch it with custom code style using the following syntax:
-
-```
-$ ./vendor/bin/phpcs --extensions=php --standard=Yii2 /home/resurtm/work/Yii2MegaApp/
-```
-
-Installation can be also be done automatically with this tool:
-
-```bash
-composer require --dev dealerdirect/phpcodesniffer-composer-installer
-```
-
-When using Composer 2.2 or higher, Composer will [ask for your permission](https://blog.packagist.com/composer-2-2/#more-secure-plugin-execution) to allow this plugin to execute code. For this plugin to be functional, permission needs to be granted.
-
-When permission has been granted, the following snippet will automatically be added to your `composer.json` file by Composer:
-```json
-{
-    "config": {
-        "allow-plugins": {
-            "dealerdirect/phpcodesniffer-composer-installer": true
-        }
-    }
-}
-```
-
-When using Composer < 2.2, you can add the permission flag ahead of the upgrade to Composer 2.2, by running:
-```bash
+```shell
 composer config allow-plugins.dealerdirect/phpcodesniffer-composer-installer true
+composer require --dev dealerdirect/phpcodesniffer-composer-installer:^1.0
 ```
 
-If you're using PhpStorm you can configure it to use CodeSniffer using Settings → PHP → Code Sniffer.
-Yii2 code style can be specified at Inspections → PHP → PHP Code Sniffer validation.
+Usage
+-----
 
-### Useful links
+Check a project with the `Yii2` coding standard:
 
-* [Configuration options](https://pear.php.net/manual/en/package.php.php-codesniffer.config-options.php)
-* [Manual and guide](https://github.com/PHPCSStandards/PHP_CodeSniffer/wiki)
-* [GitHub repository](https://github.com/PHPCSStandards/PHP_CodeSniffer)
+```shell
+./vendor/bin/phpcs --extensions=php --standard=Yii2 path/to/project
+```
+
+Automatically fix supported violations with PHP Code Beautifier and Fixer:
+
+```shell
+./vendor/bin/phpcbf --extensions=php --standard=Yii2 path/to/project
+```
+
+Without the Composer installer plugin, reference the ruleset by its installed path:
+
+```shell
+./vendor/bin/phpcs --extensions=php --standard=vendor/yiisoft/yii2-coding-standards/Yii2 path/to/project
+```
+
+You can also extend the standard from a project-level `phpcs.xml` or `phpcs.xml.dist` file:
+
+```xml
+<?xml version="1.0"?>
+<ruleset name="Project">
+    <rule ref="Yii2"/>
+
+    <file>src</file>
+    <file>tests</file>
+</ruleset>
+```
+
+Then run PHP_CodeSniffer without additional arguments:
+
+```shell
+./vendor/bin/phpcs
+```
 
 PhpStorm
 --------
 
-Yii uses PSR-12 as code style standard. You can choose these via `Settings` → `Code Style` → `PHP` → `Set from...` → `Predefined Style` → `PSR12`.
+Configure PHP_CodeSniffer under `Settings` → `PHP` → `Quality Tools` → `PHP_CodeSniffer`. Enable the inspection
+under `Settings` → `Editor` → `Inspections` → `PHP` → `Quality tools` → `PHP_CodeSniffer validation`, and
+select the `Yii2` coding standard.
 
-ADDITIONAL NOTES
-----------------
+## Documentation
 
-Feel free to request additional features, submit bugs and problems.
+- [Yii2 core code style](https://github.com/yiisoft/yii2/blob/master/docs/internals/core-code-style.md)
+- [PHP_CodeSniffer documentation](https://github.com/PHPCSStandards/PHP_CodeSniffer/wiki)
+- [PHP_CodeSniffer configuration options](https://github.com/PHPCSStandards/PHP_CodeSniffer/wiki/Configuration-Options)
 
-Thank you for choosing Yii Framework!
+## Support the project
+
+[![Open Collective](https://img.shields.io/badge/Open%20Collective-sponsor-7eadf1?style=for-the-badge&logo=open%20collective&logoColor=7eadf1&labelColor=555555)](https://opencollective.com/yiisoft)
+
+## Follow updates
+
+[![Official website](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=for-the-badge&logo=yii)](https://www.yiiframework.com/)
+[![Follow on X](https://img.shields.io/badge/-Follow%20on%20X-1DA1F2.svg?style=for-the-badge&logo=x&logoColor=white&labelColor=000000)](https://x.com/yiiframework)
+[![Telegram](https://img.shields.io/badge/telegram-join-1DA1F2?style=for-the-badge&logo=telegram)](https://t.me/yii_framework_in_english)
+[![Slack](https://img.shields.io/badge/slack-join-1DA1F2?style=for-the-badge&logo=slack)](https://yiiframework.com/go/slack)
