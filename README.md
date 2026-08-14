@@ -10,7 +10,7 @@
 
 This package provides the [PHP_CodeSniffer](https://github.com/PHPCSStandards/PHP_CodeSniffer) coding standard used by
 [Yii2](https://www.yiiframework.com/) core and official extensions. The ruleset is based on PSR-12 with the
-Yii-specific exceptions documented in the [Yii2 core code style](https://github.com/yiisoft/yii2/blob/22.0/docs/internals/core-code-style.md).
+Yii-specific exceptions documented in the [Yii2 core code style](https://github.com/yiisoft/yii2/blob/master/docs/internals/core-code-style.md).
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-coding-standards.svg?style=for-the-badge&label=Stable&logo=packagist)](https://packagist.org/packages/yiisoft/yii2-coding-standards)
 [![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-coding-standards.svg?style=for-the-badge&label=Downloads)](https://packagist.org/packages/yiisoft/yii2-coding-standards)
